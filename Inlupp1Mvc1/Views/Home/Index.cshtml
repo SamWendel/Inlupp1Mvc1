@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Heading Row -->
+    <div class="margin-header-body" style="background-color: #343a40">
+        <div class="row align-items-center my-5">
+            <div class="col-lg-7">
+                <img class="mySlides w3-animate-fading" src="https://www.extremetech.com/wp-content/uploads/2020/11/02IVfjGisnI2rBYfxu9hDve-1.1604347947.fit_scale.size_1600x900.jpg" width="650" height="400">
+                <img class="mySlides w3-animate-fading" src="https://images.indianexpress.com/2021/02/PS5-FB.jpg" width="650" height="400" />
+                <img class="mySlides w3-animate-fading" src="https://images.nintendolife.com/9c3b4be023efb/nintendo-switch.900x.jpg" width="650" height="400" />
+            </div>
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-5">
+                <h1 style="color: white; font-weight:lighter">Vill du bli riktigt L33T?</h1>
+                <p style="color: white; font-weight:lighter">
+                    Då har du kommit helt rätt! Här på Sam's har vi all equipment du kan tänkas behöva för att steppa upp ditt game såväl in game som irl.
+                    <br /><br />Öppet 13:37 - 13:37 alla dagar i veckan!
+                </p>
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- Call to Action Well -->
+    @*<div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body">
+                <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+            </div>
+        </div>*@
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">BILDSKÄRMAR</h2>
+                    <p class="card-text">Bildskärmar i alla prisklasser!</p>
+                </div>
+                <div style="background-color: #343a40" class="card-footer">
+                    <a asp-controller="Product" asp-action="ProductIndex" class="btn btn-primary btn-sm">Gå Vidare</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">DATORER</h2>
+                    <p class="card-text">Supderdatorer fresh out the oven 2021!</p>
+                </div>
+                <div style="background-color: #343a40" class="card-footer">
+                    <a asp-controller="Product" asp-action="ProductIndex" class="btn btn-primary btn-sm">Gå Vidare</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">KONSOLER</h2>
+                    <p class="card-text">Next gen konsoler för dig som vill tjäna en hacka på blocket!</p>
+                </div>
+                <div style="background-color: #343a40" class="card-footer">
+                    <a asp-controller="Product" asp-action="ProductIndex" class="btn btn-primary btn-sm">Gå Vidare</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+</div>
