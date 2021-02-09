@@ -1,19 +1,20 @@
 ﻿@model Inlupp1Mvc1.ViewModels.ProductIndexViewModel
 
-@foreach (var product in Model.ProductsList)
 {
     <div class="container">
         <div class="row margin-header-body">
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
-                    <div class="card-body">
-                        <h2 class="card-title"><img src="@product.Image" width="325" height="200" /></h2>
-                        <p class="card-text">@product.Name</p>
+                    @foreach (var product in Model.ProductsList)
+                    {
+                        <div class="card-body">
+                            <h2 class="card-title"><img src="@product.Image" width="325" height="200" /></h2>
+                            <p class="card-text">@product.Name</p>
+                        </div>
+                        <div style="background-color: #343a40" class="card-footer">
+                            <a asp-controller="Product" asp-action="Monitor" class="btn btn-primary btn-sm">Gå Vidare</a>
+                        </div>}
                     </div>
-                    <div style="background-color: #343a40" class="card-footer">
-                        <a asp-controller="Product" asp-action="Monitor" class="btn btn-primary btn-sm">Gå Vidare</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
